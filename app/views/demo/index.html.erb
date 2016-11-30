@@ -1,0 +1,8 @@
+<h1>Hello world from index</h1>
+<!-- exactly the same but second is more accepted ruby format -->
+<a href="/demo/hello">Hello page 1</a><br>
+<%= link_to("Hello page 2", {:action => 'hello' })  %><br>
+
+
+<!-- this adds parameters to url -->
+<%= link_to("Hello with parameters", {:action => 'hello', :page => 5, :id => 20 })  %>

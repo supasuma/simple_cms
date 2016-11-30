@@ -1,0 +1,12 @@
+<h1>Hello world from Hello</h1>
+<!-- ctrl - shift - .    gives you erb visible tags... ctrl - .  for invisible -->
+<% @array.each do |n| %>
+<%= n %><br/>
+<% end  %>
+
+<%= link_to("Index page 2", {:action => 'index' })  %> <br>
+
+ID:<%= @id %><br>
+ID: <%= params[:id] %><br>
+Page:  <%= @page %> <br>
+Next Page: <%= @page.to_i + 1 %> <br>
